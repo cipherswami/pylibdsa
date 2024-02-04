@@ -1,6 +1,7 @@
 from pylibdsa.structures import SingleLinkedList, Node
 
 emptyList = SingleLinkedList()
+emptyList.traverse()
 emptyList.append(9)
 emptyList.append(8)
 emptyList.append(7)
@@ -66,5 +67,10 @@ myList.traverse()
 myList.pop()
 myList.traverse()
 
+myList.append(69)
+myList.traverse()
+
+myList.delete(0)
+myList.traverse()
 
 
