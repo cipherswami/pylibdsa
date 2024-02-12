@@ -5,6 +5,9 @@
 #                 structures in python.
 ##############################################################
 
+# Dependencies ->
+import numpy as np
+
 # Arrays ->
 class Array:  # TBD: Implement our own methods instead of list built-in methods
     "Contiguous collection of homogenous data elements"
@@ -57,7 +60,14 @@ class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
-        self.previous = None # Included for generalization.
+
+class Node(Node):
+    "A node is a basic unit of a data structure"
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+        self.previous = None
+
 
 class SingleLinkedList:
     "Linear data structure that consists of a set of sequentially linked nodes"

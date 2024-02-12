@@ -1,2 +1,2 @@
 # pylibdsa
-Python based DSA library.
+Python based library for Data Structures and Algorithms.
